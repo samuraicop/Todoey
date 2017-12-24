@@ -9,7 +9,7 @@
 import UIKit
 
 class TodoListViewController: UITableViewController {
-
+    
     let itemArray = ["Find Mike", "Buy Eggos", "Destory Demogorgon"]
     
     
@@ -17,7 +17,7 @@ class TodoListViewController: UITableViewController {
         super.viewDidLoad()
         
     }
-
+    
     //MARK - [CHALLENGE] - Create TableView Datasource Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,10 +41,10 @@ class TodoListViewController: UITableViewController {
         //tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
         
         if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
-             tableView.cellForRow(at: indexPath)?.accessoryType = .none
+            tableView.cellForRow(at: indexPath)?.accessoryType = .none
         } else {
             
-             tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
         }
         
         
