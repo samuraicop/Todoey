@@ -9,7 +9,7 @@
 import Foundation
 
 //Class does NOT have to be called 'Item' - but can make it easier to keep track off
-class Item {
+class Item: Codable {
     var title: String = ""
     var done: Bool = false
 }
